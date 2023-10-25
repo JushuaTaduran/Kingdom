@@ -68,9 +68,15 @@ nav {
   .nav--right {
     & ul {
       display: flex;
-      gap: 1em;
+      gap: 5em;
       & li {
         & a {
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            padding-bottom: 10px;
+            border-bottom: 3px solid white;
+          }
         }
       }
     }
@@ -363,6 +369,15 @@ footer {
   align-items: center;
   gap: 4em;
   padding: 4em 15vw;
+
+  .footer--links {
+    display: flex;
+    gap: 5rem;
+
+    & a:hover {
+      color: green;
+    }
+  }
 
   & img {
     width: 200px;
