@@ -319,7 +319,12 @@ main {
       & input,
       textarea {
         width: 100%;
-        padding: 0.5em 0.5em;
+        padding: 1em 1em;
+        background: none;
+        outline: none;
+        color: white;
+        outline: none;
+        border: 1px solid white;
       }
     }
 
@@ -330,12 +335,19 @@ main {
     }
 
     .buttons {
-      display: flex;
-      gap: 0.4em;
-
       & button {
-        width: 100%;
-        padding: 0.5em 2em;
+        background: white;
+        padding: 0.8em 3em;
+        border: none;
+        color: black;
+        cursor: pointer;
+        transform: 0.5s all ease;
+
+        &:hover {
+          background: none;
+          color: white;
+          outline: 1px solid white;
+        }
       }
     }
   }
@@ -502,14 +514,12 @@ footer {
   }
 
   #section--bundles {
+    padding: 4em 10vw;
     & table {
-      border-collapse: collapse;
       width: 100%;
 
-      color: #fff;
-
       & thead {
-        font-size: 3vw;
+        font-size: 2vw;
         & tr {
           & th:not(:last-child) {
           }
@@ -520,11 +530,10 @@ footer {
       }
 
       & tbody {
-        font-size: 2vw;
+        font-size: 1.6vw;
 
         & tr {
           & th {
-            word-wrap: break-word;
           }
           & td {
           }
